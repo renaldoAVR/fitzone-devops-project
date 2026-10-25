@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitZone member login demo page.">
+  <title>FitZone | Member Login</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">FIT<span>ZONE</span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a><a class="nav-cta active" href="login.html">Member Login</a></nav>
+  </header>
+  <main class="login-main">
+    <section class="login-intro"><p class="eyebrow">WELCOME BACK</p><h1>YOUR NEXT<br><span>CHAPTER STARTS HERE.</span></h1><p>This sample page demonstrates a login form layout. It does not create accounts or authenticate users.</p><a class="text-link" href="services.html">Explore programs instead ↗</a></section>
+    <form class="form-card login-card demo-form" data-form-type="login"><div class="login-mark">FZ</div><h2>Member sign in</h2><p class="muted">Demo only — do not enter a real password.</p>
+      <label for="login-email">Email address</label><input id="login-email" name="email" type="email" placeholder="you@example.com" autocomplete="off" required>
+      <label for="login-password">Password</label><input id="login-password" name="password" type="password" placeholder="Enter a demo password" autocomplete="off" required>
+      <button class="button button-primary form-submit" type="submit">Sign in ↗</button><p class="form-status" aria-live="polite"></p><p class="form-footnote">New to FitZone? <a href="contact.html">Contact our team</a></p>
+    </form>
+  </main>
+  <footer class="site-footer"><a class="logo" href="index.html">FIT<span>ZONE</span></a><p>Built for consistency. Made for progress.</p><p>© <span class="year"></span> FitZone Fitness · Student DevOps Project</p></footer>
+</body>
+</html>
