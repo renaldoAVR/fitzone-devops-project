@@ -38,19 +38,27 @@
 
 .services-page .filter-btn {
   padding: 11px 22px;
-  border: 1px solid var(--line);
-  background: transparent;
-  color: var(--text);
+  border: 1px solid #D5CEC5;
+  background: #E8E3DC;
+  color: #222222;
   cursor: pointer;
   font-family: inherit;
   font-weight: 600;
   transition: 0.3s ease;
 }
 
-.services-page .filter-btn:hover,
-.services-page .filter-btn.active {
-  background: var(--accent);
-  border-color: var(--accent);
+ /* Hover Effect */
+.services-page .filter-btn:hover {
+  background: #292929;
+  border-color: #292929;
+  color: white;
+}
+
+ /* Selected Button */
+.services-page .filter-btn.active,
+.services-page .filter-btn.active:hover {
+  background: #FF5722;
+  border-color: #FF5722;
   color: white;
 }
 
