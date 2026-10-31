@@ -102,6 +102,11 @@
 .services-page .benefits-section .feature-card:hover {
   transform: translateY(-6px);
 }
+/* Benefits Card Headings - NEW CODE */
+
+.services-page .benefits-section .feature-card h3 {
+  color: #222222;
+}
 
 /* FAQ Section */
 
