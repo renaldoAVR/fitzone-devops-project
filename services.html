@@ -3,23 +3,161 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explore FitZone fitness programs.">
-  <title>FitZone | Services</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
-</head>
-<body>
+<title>FitZone | Services</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="services.css">
+<script src="script.js" defer></script>
+<script src="services.js" defer></script></head>
+<body class="services-page">
   <header class="site-header">
     <a class="logo" href="index.html">FIT<span>ZONE</span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="services.html">Services</a><a href="contact.html">Contact</a><a class="nav-cta" href="login.html">Member Login</a></nav>
   </header>
   <main>
-    <section class="page-hero"><p class="eyebrow">FIND YOUR FOCUS</p><h1>TRAIN WITH<br><span>INTENTION.</span></h1><p>Explore our sample programs and choose a starting point that matches your goals.</p></section>
-    <section class="section section-light"><div class="section-heading"><p class="eyebrow">OUR PROGRAMS</p><h2>YOUR GOAL. YOUR <span>GAME PLAN.</span></h2></div>
-      <div class="program-grid">
-        <article class="program-card"><span class="program-tag">01 / BUILD</span><div class="program-symbol">↗</div><h3>Strength Training</h3><p>Foundational resistance training focused on technique, gradual progression, and full-body strength.</p><ul><li>Beginner-friendly structure</li><li>Progressive workout ideas</li><li>Rest and recovery reminders</li></ul><a class="text-link" href="contact.html">Ask about strength ↗</a></article>
-        <article class="program-card featured"><span class="program-tag">02 / MOVE</span><div class="program-symbol">◎</div><h3>Cardio & Endurance</h3><p>Build your stamina with walking, running, cycling, and other movement you enjoy.</p><ul><li>Flexible activity options</li><li>Build up gradually</li><li>Track consistency</li></ul><a class="text-link" href="contact.html">Ask about cardio ↗</a></article>
-        <article class="program-card"><span class="program-tag">03 / GROW</span><div class="program-symbol">✦</div><h3>Personal Guidance</h3><p>Set a realistic goal and create a simple plan you can fit around everyday life.</p><ul><li>Goal-setting ideas</li><li>Habit-building tips</li><li>Progress check-ins</li></ul><a class="text-link" href="contact.html">Discuss your goals ↗</a></article>
-      </div>
-      <p class="notice">Project demo: these are example programs, not bookable services or medical advice.</p>
-    </section>
+    <section class="page-hero services-hero">
+  <p class="eyebrow">FIND YOUR FOCUS</p>
+
+  <h1>TRAIN WITH<br><span>INTENTION.</span></h1>
+
+  <p>
+    Explore our fitness programs and discover a training approach
+    that matches your goals and lifestyle.
+  </p>
+
+  <a href="#programs" class="button">EXPLORE PROGRAMS ↘</a>
+</section>
+    <section class="section section-light" id="programs">
+
+  <div class="section-heading">
+    <p class="eyebrow">OUR PROGRAMS</p>
+    <h2>YOUR GOAL. YOUR <span>GAME PLAN.</span></h2>
+    <p>Choose a program that supports your fitness journey.</p>
+  </div>
+
+  <!-- Program Filters -->
+  <div class="program-filters">
+    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All Programs</button>
+    <button type="button" class="filter-btn" data-filter="strength" aria-pressed="false">Strength</button>
+    <button type="button" class="filter-btn" data-filter="cardio" aria-pressed="false">Cardio</button>
+    <button type="button" class="filter-btn" data-filter="guidance" aria-pressed="false">Guidance</button>
+  </div>
+
+  <!-- Program Cards -->
+  <div class="program-grid">
+
+    <article class="program-card enhanced-card" data-category="strength">
+      <span class="program-tag">01 / BUILD</span>
+      <div class="program-symbol">↗</div>
+      <h3>Strength Training</h3>
+      <p>
+        Build full-body strength through resistance training,
+        proper technique and gradual progression.
+      </p>
+      <ul>
+        <li>Beginner-friendly structure</li>
+        <li>Progressive workout ideas</li>
+        <li>Rest and recovery reminders</li>
+      </ul>
+      <a class="text-link" href="contact.html">Ask about strength ↗</a>
+    </article>
+
+    <article class="program-card featured enhanced-card" data-category="cardio">
+      <span class="program-tag">02 / MOVE</span>
+      <div class="program-symbol">◎</div>
+      <h3>Cardio & Endurance</h3>
+      <p>
+        Improve stamina with walking, running, cycling
+        and other activities you enjoy.
+      </p>
+      <ul>
+        <li>Flexible activity options</li>
+        <li>Build up gradually</li>
+        <li>Track consistency</li>
+      </ul>
+      <a class="text-link" href="contact.html">Ask about cardio ↗</a>
+    </article>
+
+    <article class="program-card enhanced-card" data-category="guidance">
+      <span class="program-tag">03 / GROW</span>
+      <div class="program-symbol">✦</div>
+      <h3>Personal Guidance</h3>
+      <p>
+        Set realistic goals and create a simple fitness plan
+        that fits your everyday routine.
+      </p>
+      <ul>
+        <li>Goal-setting ideas</li>
+        <li>Habit-building tips</li>
+        <li>Progress check-ins</li>
+      </ul>
+      <a class="text-link" href="contact.html">Discuss your goals ↗</a>
+    </article>
+
+  </div>
+
+  <p class="notice">
+    Project demo: these are example programs, not bookable services or medical advice.
+  </p>
+
+</section>
+
+<section class="section benefits-section">
+
+  <div class="section-heading">
+    <p class="eyebrow">WHY FITZONE?</p>
+    <h2>MORE THAN JUST <span>WORKOUTS.</span></h2>
+  </div>
+
+  <div class="feature-grid">
+
+    <article class="feature-card">
+      <div class="program-symbol">✦</div>
+      <h3>Goal Focused</h3>
+      <p>Build your routine around clear and achievable fitness goals.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="program-symbol">↗</div>
+      <h3>Steady Progress</h3>
+      <p>Focus on consistency and gradual improvement over time.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="program-symbol">◎</div>
+      <h3>Balanced Lifestyle</h3>
+      <p>Make fitness a sustainable part of your everyday life.</p>
+    </article>
+
+  </div>
+
+</section>
+<section class="section section-light faq-section">
+
+  <div class="section-heading">
+    <p class="eyebrow">GOT QUESTIONS?</p>
+    <h2>FREQUENTLY ASKED <span>QUESTIONS.</span></h2>
+  </div>
+
+  <div class="faq-list">
+
+    <details>
+      <summary>Can beginners join these programs?</summary>
+      <p>Yes. The example programs are designed to demonstrate options for different experience levels.</p>
+    </details>
+
+    <details>
+      <summary>How do I choose the right program?</summary>
+      <p>Start by identifying your fitness goal, preferred activities and current experience level.</p>
+    </details>
+
+    <details>
+      <summary>Can I contact FitZone for more information?</summary>
+      <p>Yes. Visit our Contact page to explore the demonstration contact form.</p>
+    </details>
+
+  </div>
+
+</section>
   </main>
   <footer class="site-footer"><a class="logo" href="index.html">FIT<span>ZONE</span></a><p>Built for consistency. Made for progress.</p><p>© <span class="year"></span> FitZone Fitness · Student DevOps Project</p></footer>
 </body>
