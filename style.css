@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-:root{--bg:#101111;--panel:#191b1b;--panel-2:#222424;--text:#f4f3ef;--muted:#a8aaa5;--accent:#ff5a2a;--accent-light:#ff805b;--line:#343636;--light:#f2f0eb;--dark:#151616}
+:root{--bg:#101111;--panel:#191b1b;--panel-2:#222424;--text:#ff5a2a;--muted:#a8aaa5;--accent:#ff5a2a;--accent-light:#ff805b;--line:#343636;--light:#f2f0eb;--dark:#151616}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:"DM Sans",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
@@ -46,7 +46,7 @@ h1 span,h2 span{color:var(--accent)}
 .section-heading h2,.split-section h2,.contact-info h2{font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-1px}
 .section-heading>p:last-child{color:#676964;margin-top:14px}
 .feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1150px;margin:0 auto}
-.feature-card{padding:28px;background:#fff;border:1px solid #e0ded8;border-radius:7px;min-height:205px}
+.feature-card{padding:28px;background:#fff;border:1px solid #d8dfe0;border-radius:7px;min-height:205px}
 .feature-icon{font:700 1.5rem "Space Grotesk",sans-serif;color:var(--accent);margin-bottom:20px}
 .feature-card h3,.program-card h3{font-size:1.2rem;margin-bottom:10px}
 .feature-card p,.program-card p{font-size:.92rem;color:#696b66}
