@@ -6,32 +6,123 @@
   <meta name="description" content="FitZone helps you build strength, confidence, and healthy habits.">
   <title>FitZone | Home</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css"><!-- home page only; loads after style.css -->
   <script src="script.js" defer></script>
+  <script src="home.js" defer></script><!-- home page only -->
 </head>
-<body>
+<body class="home-page">
   <header class="site-header">
     <a class="logo" href="index.html" aria-label="FitZone home">FIT<span>ZONE</span></a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <nav class="nav-links" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a><a href="about.html">About</a>
+      <a class="active" href="index.html" aria-current="page">Home</a><a href="about.html">About</a>
       <a href="services.html">Services</a><a href="contact.html">Contact</a><a class="nav-cta" href="login.html">Member Login</a>
     </nav>
   </header>
   <main>
+
+    <!-- HERO (original content kept; stats now count up, visual now moves) -->
     <section class="hero">
       <div class="hero-content">
         <p class="eyebrow">YOUR JOURNEY. YOUR STRENGTH.</p>
         <h1>BUILD A<br><span>STRONGER YOU.</span></h1>
         <p class="hero-copy">Train with purpose. Build lasting habits. Become the strongest version of yourself, one session at a time.</p>
         <div class="hero-actions"><a class="button button-primary" href="services.html">Explore Programs <span>↗</span></a><a class="button button-ghost" href="about.html">Our Story</a></div>
-        <div class="hero-stats"><div><strong>12+</strong><small>Training programs</small></div><div><strong>100%</strong><small>Commitment to you</small></div><div><strong>1</strong><small>Goal: your progress</small></div></div>
+        <div class="hero-stats">
+          <div><strong data-count="12" data-suffix="+">12+</strong><small>Training programs</small></div>
+          <div><strong data-count="100" data-suffix="%">100%</strong><small>Commitment to you</small></div>
+          <div><strong data-count="1">1</strong><small>Goal: your progress</small></div>
+        </div>
       </div>
-      <div class="hero-visual" role="img" aria-label="Abstract fitness graphic">
+      <div class="hero-visual" role="img" aria-label="Abstract fitness graphic with a daily streak and XP badge">
         <div class="visual-ring ring-one"></div><div class="visual-ring ring-two"></div>
         <div class="visual-label"><span class="pulse"></span> NO SHORTCUTS. JUST PROGRESS.</div>
+        <div class="home-chip home-chip-a">STREAK · 3 DAYS</div>
+        <div class="home-chip home-chip-b">+25 XP</div>
         <div class="visual-number">01<span>/ DAILY</span></div>
       </div>
     </section>
+
+    <!-- SCROLLING BAND -->
+    <div class="home-ticker" aria-hidden="true">
+      <div class="home-ticker-track">
+        <span>STRENGTH</span><span>✦</span><span>CONSISTENCY</span><span>✦</span><span>RECOVERY</span><span>✦</span><span>PROGRESS</span><span>✦</span>
+        <span>STRENGTH</span><span>✦</span><span>CONSISTENCY</span><span>✦</span><span>RECOVERY</span><span>✦</span><span>PROGRESS</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- PAGE CARDS: one per team page -->
+    <section class="section home-paths" aria-labelledby="home-paths-title">
+      <div class="section-heading home-reveal">
+        <p class="eyebrow">START HERE</p>
+        <h2 id="home-paths-title">CHOOSE YOUR <span>PATH.</span></h2>
+        <p>Everything you need is one tap away.</p>
+      </div>
+      <div class="home-path-grid">
+        <a class="home-path home-reveal" href="about.html">
+          <span class="home-path-num">01</span>
+          <h3>About</h3>
+          <p>Who we are and what drives FitZone.</p>
+          <span class="home-path-go">Learn more <b>↗</b></span>
+        </a>
+        <a class="home-path home-reveal" href="services.html">
+          <span class="home-path-num">02</span>
+          <h3>Services</h3>
+          <p>Programs built around your goals.</p>
+          <span class="home-path-go">View programs <b>↗</b></span>
+        </a>
+        <a class="home-path home-reveal" href="contact.html">
+          <span class="home-path-num">03</span>
+          <h3>Contact</h3>
+          <p>Questions? Send us a message.</p>
+          <span class="home-path-go">Get in touch <b>↗</b></span>
+        </a>
+        <a class="home-path home-path-hot home-reveal" href="login.html">
+          <span class="home-path-num">04</span>
+          <h3>Member Login</h3>
+          <p>Already training with us? Jump back in.</p>
+          <span class="home-path-go">Log in <b>↗</b></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE DAILY QUEST (sample data only) -->
+    <section class="section home-quest" aria-labelledby="home-quest-title">
+      <div class="home-quest-layout">
+        <div class="home-reveal">
+          <p class="eyebrow">TRY IT NOW</p>
+          <h2 id="home-quest-title">TURN TODAY INTO <span>PROGRESS.</span></h2>
+          <p class="home-quest-copy">Pick a goal, then tick off a sample session. Every task earns XP, and every level shows how far you have come. This is a demo, nothing is saved.</p>
+          <a class="button button-ghost" href="services.html">See real programs <span>↗</span></a>
+        </div>
+
+        <div class="home-panel home-reveal" aria-label="Sample daily quest">
+          <div class="home-panel-top">
+            <span class="home-panel-title">TODAY'S QUEST</span>
+            <span class="home-level" id="home-level">LV 1</span>
+          </div>
+
+          <div class="home-goals" role="group" aria-label="Choose a goal">
+            <button type="button" class="home-goal" data-goal="strength" aria-pressed="true">Strength</button>
+            <button type="button" class="home-goal" data-goal="endurance" aria-pressed="false">Endurance</button>
+            <button type="button" class="home-goal" data-goal="mobility" aria-pressed="false">Mobility</button>
+          </div>
+
+          <div class="home-panel-body">
+            <div class="home-ring" id="home-ring" style="--p:0" aria-hidden="true"><span id="home-pct">0%</span></div>
+            <ul class="home-tasks" id="home-tasks"></ul>
+          </div>
+
+          <div class="home-xp-row"><span>XP</span><span id="home-xp-text">0 / 100</span></div>
+          <div class="home-xp-bar" aria-hidden="true"><i id="home-xp-fill"></i></div>
+
+          <p class="home-msg" id="home-msg" aria-live="polite">Pick tasks to start your session.</p>
+          <button type="button" class="home-reset" id="home-reset">Reset demo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY FITZONE (original content kept) -->
     <section class="section section-light">
       <div class="section-heading"><p class="eyebrow">WHY FITZONE</p><h2>MADE FOR YOUR <span>NEXT LEVEL.</span></h2><p>Simple, consistent training that fits real life.</p></div>
       <div class="feature-grid">
@@ -40,6 +131,8 @@
         <article class="feature-card"><div class="feature-icon">✦</div><h3>Healthy Habits</h3><p>Make movement, recovery, and consistency part of your routine.</p></article>
       </div>
     </section>
+
+    <!-- CALLOUT (original content kept) -->
     <section class="callout"><div><p class="eyebrow">READY WHEN YOU ARE</p><h2>YOUR FIRST STEP<br>STARTS HERE.</h2></div><a class="button button-primary" href="contact.html">Talk to our team ↗</a></section>
   </main>
   <footer class="site-footer"><a class="logo" href="index.html">FIT<span>ZONE</span></a><p>Built for consistency. Made for progress.</p><p>© <span class="year"></span> FitZone Fitness · Student DevOps Project</p></footer>
