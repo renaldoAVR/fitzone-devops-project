@@ -11,7 +11,7 @@ A responsive five-page static fitness website built using HTML, CSS, and JavaScr
 - `login.html` — Login form demo
 
 ## Technologies Used
-- `HTML5` — Shared responsive design
+- `HTML5` — Website structure and content
 - `CSS3` — Styling and responsive layout
 - `JavaScript` — Mobile navigation, footer year, and demo form feedback
 - `Git and GitHub` — Version control and collaboration
@@ -40,13 +40,13 @@ The following are the proposed page assignments:
 | Manojkumar Palanivel | Contact       | `manojkumar/contact-page` |
 | Sukumar Nagarajan    | Login         | `sukumar/login-page`      |
 
-## Run locally
+## Run Locally
 
 1. Clone the repository.
 2. Open the project folder in Visual Studio Code.
-3. Open `index.html` using the Live Server extension, or open it directly in a web browser.
+3. Open `index.html` using the Live Server extension or directly in a web browser.
 
-## Important limitations
+## Important Limitations
 
 This is a front-end student demonstration project.
 
@@ -68,13 +68,13 @@ This is a front-end student demonstration project.
 
 **Important:** Follow the repository's branch protection rules when merging changes into `main`.
 
-## GitHub Pages deployment
+## GitHub Pages Deployment
 
 After the team has integrated and tested the website:
 
 1. Push the final approved changes to `main`.
 2. Open the repository's **Settings → Pages**.
-3. Under the build and deployment settings, select **Deploy from a branch**.
+3. Under Build and Deployment, select **Deploy from a branch**.
 4. Choose `main` as the branch and `/(root)` as the folder.
 5. Save the settings and wait for deployment to complete.
 6. Open the published website URL shown in the Pages settings.
